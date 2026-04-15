@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacje w restauracji</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Rezerwacje w restuaracji</h1>
+            <p class="subtitle">System rezerwacji stolików online</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="panel-rezerwacji">
+            <form id="formularz-rezerwacji">
+                <fieldset>
+                    <legend>Zarezerwuj stolik</legend>
+                    
+                    <div class="form-group">
+                        <label for="klient">Imię i nazwisko:</label>
+                        <input type="text" id="klient" required placeholder="Jan Kowalski">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="stolik">Numer stolika (1-15):</label>
+                            <input type="number" id="stolik" min="1" max="15" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="miejsce">Miejsce:</label>
+                            <select id="miejsce" required>
+                                <option value="" disabled selected>--wybierz--</option>
+                                <option value="Sala Glowna">Sala Główna</option>
+                                <option value="Ogrod">Ogródek Letni</option>
+                                <option value="Antresola">Antresola (Piętro)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit">Dodaj rezerwację</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="zarzadzanie">
+            <div class="zarzadzanie-header">
+                <h2>Dzisiejsze rezerwacje</h2>
+                <div class="filtry">
+                    <label for="filtr-miejsce">Filtruj salę: </label>
+                    <select id="filtr-miejsce">
+                        <option value="wszystkie">Wszystkie miejsca</option>
+                        <option value="Sala Glowna">Sala Główna</option>
+                        <option value="Ogrod">Ogródek Letni</option>
+                        <option value="Antresola">Antresola</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="lista-rezerwacji"></div>
+        </section>
+    </main>
+
+</body>
+</html>
