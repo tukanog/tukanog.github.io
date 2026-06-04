@@ -1,0 +1,80 @@
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    display: flex;
+    flex-wrap: wrap;
+    color: #334155;
+    background-color: #ffdfa3;
+    overflow-x: hidden;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    div {
+        border-radius: 20px;
+        background-color: #f5efda;
+        padding: 20px;
+        margin: 2px;
+        border: 6px solid rgb(155, 7, 7);
+        box-shadow: 0 10px 10px -5px black;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 6px;
+    }
+    div:hover {
+        transform: scale(1.03); /* Powiększenie o 3% */
+        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+        z-index: 10; /* Sprawia, że najechanym element jest zawsze "nad" pozostałymi */
+        background-color: #fffaf0; /* Subtelna zmiana koloru tła dla lepszego efektu */
+    }
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 10px 10px -5px black;
+    background-color: #f5efda;
+    border: 10px solid rgb(255, 80, 80);
+    border-radius: 20px;
+    h1 {
+        font-size: 6vw;
+        text-shadow: 5px 5px 1px rgb(255, 80, 80);
+        font-family: "BBH Sans Bartle";
+        span {
+            transition: 0.2s ease;
+        }
+        span:hover {
+            color: rgb(255, 80, 80);
+            text-shadow: 5px 5px 1px #334155;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "one two two"
+    "one three three";
+    #one {
+        grid-area: one;
+    }
+    #two {
+        grid-area: two;
+    }
+    #three {
+        grid-area: three;
+    }
+}
+
+
+aside {
+    
+    
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
