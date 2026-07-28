@@ -37,7 +37,6 @@ header {
     h1 {
         font-size: 6vw;
         text-shadow: 5px 5px 1px rgb(255, 80, 80);
-        font-family: "BBH Sans Bartle";
         span {
             transition: 0.2s ease;
         }
