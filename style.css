@@ -38,11 +38,12 @@ header {
         font-size: 6vw;
         text-shadow: 5px 5px 1px rgb(255, 80, 80);
         span {
-            transition: 0.2s ease;
+            transition: ease;
         }
         span:hover {
             color: rgb(255, 80, 80);
             text-shadow: 5px 5px 1px #334155;
+            /* font-size: 8vw; */
         }
     }
 }
