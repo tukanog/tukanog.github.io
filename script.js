@@ -8,5 +8,5 @@ NEWSLETTER.onsubmit = function(e) {
     const EMAIL = qs('#email').value
     const KOMUNIKAT = qs('#komunikat')
 
-    KOMUNIKAT.innerHTML = `Wyraziłeś zgodę na prawdziwy w 100% newsletter, zostanie on na pewno wysłany na adres <b>${EMAIL}</b>`
+    KOMUNIKAT.innerHTML = `Wyraziłeś zgodę na <strong>prawdziwy<strong> w 100% newsletter, zostanie on <strong>na pewno<strong> wysłany na adres <b>${EMAIL}</b>`
 }
