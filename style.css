@@ -4,10 +4,21 @@
     background-color: #EEEEEE;
 }
 
-h1, footer {
+h1, h2, footer {
     text-align: center;
 }
 
 h1 {
     font-family: "BBH Bartle";
+}
+
+#container {
+    display: flex;
+    > main {
+        width: 80%;
+        padding: 5px;
+    }
+    > aside {
+        width: 20%;
+    }
 }
